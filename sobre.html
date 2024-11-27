@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gowun+Batang:wght@400;700&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gowun+Batang:wght@400;700&family=Julius+Sans+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <title>Sobre Mim - Júlia Marazo</title>
+  <style>
+    /* Cores principais */
+    :root {
+      --cor-primaria: #FFFFFF;
+      --cor-secundaria: #F1F1F1;
+      --cor-destaque: #D1D1D1;
+      --cor-fundo: #E5E5E5;
+      --cor-hover: #CCCCCC;
+      --cor-link-ativo: #A8A8A8;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: var(--cor-fundo);
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      position: relative;
+      background: rgba(255, 255, 255, 0.5);
+      color: rgba(0, 0, 0, 0.7);
+      padding: 1rem 0;
+      backdrop-filter: blur(5px);
+      z-index: 1;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: "Julius Sans One", sans-serif;
+      font-weight: 500;
+      font-size: 2rem;
+      color: #333;
+      margin-top: 1rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      display: inline-block;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, border-radius 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--cor-hover);
+    }
+
+    .nav-links li {
+      margin: 0 0.5rem;
+      background-color: var(--cor-primaria);
+      border-radius: 8px;
+    }
+
+    .nav-links .active {
+      background-color: var(--cor-link-ativo);
+    }
+
+    .section {
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .about-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1;
+      text-align: left;
+      max-width: 600px;
+    }
+
+    .about-text p {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+
+    .about-img {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: auto;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 0px;
+      flex-wrap: wrap;
+    }
+
+    .columns li{
+      font-size: 14px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ul li {
+      line-height: 1.8;
+    }
+
+    ul li:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    p{
+      font-family: "Source Serif 4", serif;
+      font-size: 14px;
+    }
+
+    .job {
+      margin-bottom: 20px;
+    }
+
+    .job h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .job p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: var(--cor-secundaria);
+      color: #333;
+    }
+    h1 {
+    text-align: center;  /* Centraliza o título */
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>Sobre Mim </h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">INÍCIO</a></li>
+          <li><a href="portfolio.html">PORTFÓLIO</a></li>
+          <li><a href="sobre.html" class="active">SOBRE MIM</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Sobre -->
+  <div class="section">
+    <h2>Olá,</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Me chamo Júlia. Estou com 21 anos e curso <b>Arquitetura e Urbanismo</b> pela UniAcademia de Juiz de Fora, atualmente, a caminho do 7º período.</p>
+        <p>Meu pai é proprietário de uma marcenaria e sempre gostou de incluir a família nos trabalhos, porisso, eu visito obras e participo das vendas desde nova, quando passei a me interessar mais pelo ramo. Foi no segundo ano do ensino médio que firmei meu desejo de fazer arquiterura, desde então meu carinho e interesse pela profissão só crescem!</p>
+        <p>Na faculdade, me dedico ao curso e vivo um sonho. Entendo o privilégio de estudar e praticar aquilo que cada dia amo mais! Aprender e buscar conhecimento sempre foram meu objetivo e, por isso, tenho facilidade e interesse em aprender ainda mais sobre a arquitetura, entendendo sempre a grande importância de aprender, principalmente, na prática.</p>
+        <p>Nas empresas onde estagiei pude viver verdadeiramente a rotina dentro da construção civil, tive contato com engenheiros, arquitetos, mestres de obras e tantos outros profissionais que trabalham juntos para concretizar um sonho de projeto. Pude aprender um pouco sobre os imprevistos de uma obra, os desafios de projetar e a sensibilidade para entender as necessidades e desejos dos clientes. Essas experiências agregam valor ao meu sonho e me fazem ter mais vontade de trabalhar e aprender</p>
+
+      </div>
+      <div class="about-img">
+        <img src="./imagens/julia.jpg" alt="Júlia Marazo">
+      </div>
+    </div>
+  </div>
+
+  <!-- Formação e Experiência -->
+  <div class="container">
+    <h1>Formação e Experiências</h1>
+
+    <div class="section">
+      <h2>FORMAÇÃO</h2>
+      <div class="columns">
+        <div class="column">
+          <h3>UniAcademia - Campus Arnaldo Janssen / JF</h3>
+          <ul>
+            <p>Arquitetura e Urbanismo</p>
+            <p>Graduação, 2022 - 2026</p>
+            <p>Atualmente no 6º período</p>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Colégio Equipe de Cataguases</h3>
+          <ul>
+            <p>Ensino Médio</p>
+            <p>Concluído (2018 - 2020)</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>EXPERIÊNCIAS</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="job">
+            <h3>NAGIMERITO MÓVEIS E ESQUADRIAS</h3>
+            <p>Atendimento ao público</p>
+            <p>Acompanhamento em obras</p>
+            <p>Execução de detalhamento de marcenaria</p>
+            <p>Divulgação de produtos nas redes sociais</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="job">
+            <h3>M | Dandiê Engenharia</h3>
+            <p>Orçamentos de obra e de terceirizados</p>
+            <p>Relatórios de andamento de obra</p>
+            <p>Atualização de projetos</p>
+            <p>Auxílio na conferência dos detalhes de projeto</p>
+            <p>Organização do início de obra</p>
+            <p>As Built Hidráulico</p>
+            <p>Identificação do quadro de energia</p>
+            <p>Relatório de vistoria da obra</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="job">
+            <h3>Renata Carvalho Arquitetura</h3>
+            <p>Elaboração de projetos executivos</p>
+            <p>Elaboração de modelagem 3D</p>
+            <p>Elaboração de detalhamento de marcenaria</p>
+            <p>Execução de levantamento de obra</p>
+            <p>Acompanhamento em obras</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>HABILIDADES</h2>
+    <div class="columns">
+      <div class="column">
+        <ul style="text-align: center; margin-right: 40px;">
+          <p>Domínio de AutoCad</p>
+          <p>Domínio de SketchUp</p>
+          <p>Domínio de Enscape</p>
+          <p>Noção de Revit</p>
+          <p>Excel</p>
+        </ul>
+      </div>
+      
+        
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 - Júlia Marazo</p>
+  </footer>
+</body>
+</html>
